@@ -9,7 +9,7 @@ import com.soywiz.korio.file.std.resourcesVfs
  *
  * Uses a `ktree` asset which is editable in the [KorGE Visual Editor](https://korlibs.soywiz.com/korge/editor/).
  */
-suspend fun main() =
+suspend fun mainSampleKTree() =
 	Korge(width = 920, height = 720, quality = GameWindow.Quality.PERFORMANCE, title = "My Awesome Box2D Game!") {
 		registerBox2dSupportOnce()
 		addChild(resourcesVfs["restitution.ktree"].readKTree(views))
